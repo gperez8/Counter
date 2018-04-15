@@ -11,7 +11,7 @@ const rootID = document.getElementById("root");
 render(
 	<Provider store={store}>
     	<Counter 
-    		value={store}
+    		value={store.getState()}
     	/>
 	</Provider>,
 	rootID
