@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { increment, decrement } from '../actions/actionsCreator';
 /*import { bindActionCreators }  from 'redux';*/
 
-const Counter = ({value, OnIncrement, OnDecrement}) => (
-	<p>
+export const Counter = ({value, OnIncrement, OnDecrement}) => (
+	<p id="counter">
 		<button onClick={() => OnIncrement()}> + </button>
 		{value} 
 		<button onClick={() => OnDecrement()}> - </button>
