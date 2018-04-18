@@ -6,7 +6,7 @@ import { increment, decrement } from '../actions/actionsCreator';
 export const Counter = ({value, OnIncrement, OnDecrement}) => (
 	<p id="counter">
 		<button id="add" onClick={() => OnIncrement()}> + </button>
-		<span id="counter" value={value}>{value}</span> 
+		<span id="counter">{value}</span> 
 		<button id="subtract" onClick={() => OnDecrement()}> - </button>
 	</p>
 );
